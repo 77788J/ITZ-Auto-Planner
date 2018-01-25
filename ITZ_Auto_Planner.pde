@@ -151,7 +151,7 @@ void mouseWheel(MouseEvent event) {
   scroll_offset -= dist * 50;
   
   textSize(25);
-  int m = -round(24 + (lines.size() - 1) * ( 2 * (textAscent() + textDescent()) + 32) + textAscent() + textDescent()) + height;
+  int m = -round(-24 + (lines.size() - 1) * ( 2 * (textAscent() + textDescent()) + 32) + textAscent() + textDescent()) + height;
   if (scroll_offset < m) scroll_offset = m;
   if (scroll_offset > 0) scroll_offset = 0;
   
